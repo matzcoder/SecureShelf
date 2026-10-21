@@ -2,12 +2,7 @@
 
 ### AppSec RAG Assistant · Fair-Share LLM Quotas · Pull-Request Security Reviews
 
-```{=html}
-```
-`<strong>`{=html}Security knowledge that scales across teams---without
-letting one team consume the shared LLM quota.`</strong>`{=html}
-```{=html}
-```
+
 SecureShelf is an internal Application Security (AppSec) assistant and
 pull-request security review system designed for software engineering
 organizations. It combines retrieval-augmented generation (RAG) over
