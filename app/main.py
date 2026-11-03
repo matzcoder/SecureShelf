@@ -2,12 +2,11 @@ import json
 import time
 from collections.abc import AsyncIterator
 from typing import Annotated
+
 import psycopg
-from fastapi.responses import JSONResponse
-
-
-from fastapi import Depends, FastAPI  
-from fastapi.responses import StreamingResponse
+from app.schemas import ChatRequest
+from fastapi import Depends, FastAPI
+from fastapi.responses import JSONResponse, StreamingResponse
 
 from app.config import Settings, get_settings
 from app.cost import log_call
@@ -15,7 +14,6 @@ from app.llm.errors import LLMConfigurationError, LLMUnavailable
 from app.llm.factory import create_provider
 from app.llm.reliable import AsyncReliableLLM
 from app.llm.types import LLMRequest, Message
-from app.schemas import ChatRequest
 from app.usage import usage_by_day
 
 app = FastAPI(title="Examate RAG starter", version="0.1.0")

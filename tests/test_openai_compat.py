@@ -2,8 +2,8 @@ import json
 
 import httpx
 import pytest
-
 from app.llm.openai_compat import OpenAICompatProvider
+
 from app.llm.types import LLMRequest, Message
 
 REQUEST = LLMRequest(

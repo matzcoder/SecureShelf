@@ -1,6 +1,7 @@
+from app.llm.openai_compat import OpenAICompatProvider
+
 from app.config import Settings
 from app.llm.fake import FakeProvider
-from app.llm.openai_compat import OpenAICompatProvider
 from app.llm.reliable import AsyncReliableLLM
 from app.llm.types import LLMProvider
 
