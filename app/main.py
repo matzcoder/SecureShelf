@@ -4,7 +4,6 @@ from collections.abc import AsyncIterator
 from typing import Annotated
 
 import psycopg
-from app.schema import ChatRequest
 from fastapi import Depends, FastAPI
 from fastapi.responses import JSONResponse, StreamingResponse
 
@@ -14,6 +13,7 @@ from app.llm.errors import LLMConfigurationError, LLMUnavailable
 from app.llm.factory import create_provider
 from app.llm.reliable import AsyncReliableLLM
 from app.llm.types import LLMRequest, Message
+from app.schema import ChatRequest
 from app.usage import usage_by_day
 
 app = FastAPI(title="Examate RAG starter", version="0.1.0")
