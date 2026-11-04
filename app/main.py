@@ -4,7 +4,7 @@ from collections.abc import AsyncIterator
 from typing import Annotated
 
 import psycopg
-from app.schemas import ChatRequest
+from app.schema import ChatRequest
 from fastapi import Depends, FastAPI
 from fastapi.responses import JSONResponse, StreamingResponse
 
