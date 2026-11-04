@@ -1,3 +1,5 @@
+"""Request and response models. Empty for now; you add these from Session 4."""
+
 from typing import Literal
 
 from pydantic import BaseModel, Field
