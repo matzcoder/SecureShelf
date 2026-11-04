@@ -1,4 +1,5 @@
 from typing import Literal
+from app.schema import ChatRequest
 
 from pydantic import BaseModel, Field
 
