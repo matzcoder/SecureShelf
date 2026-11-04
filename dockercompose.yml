@@ -1,4 +1,4 @@
-vservices:
+services:
   db:
     image: pgvector/pgvector:pg16
     environment:
