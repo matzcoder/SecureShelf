@@ -7,4 +7,5 @@ class LLMUnavailable(Exception):
 
 
 class LLMConfigurationError(Exception):
-    """The request or provider configuration cannot succeed by retrying."""
+    """The request or provider configuration cannot succeed by retrying. And
+      not working is not the provider's fault, so we don't retry.    """
