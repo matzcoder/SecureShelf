@@ -3,4 +3,5 @@ uvicorn[standard]>=0.30
 pydantic-settings>=2.4
 pydf>=6.21
 psycopg2-binary>=2.9.9
-psycopg=>=3.1.9
+psycopg[binary]
+pytest
